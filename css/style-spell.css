@@ -1,0 +1,191 @@
+div.spellclass {
+  position: relative;
+  margin: 0 auto;
+  top: 8.5em;
+  font-family: Ubuntu Mono;
+  width: 99%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+  padding-top: 1em;
+}
+
+.spellclass .divTableCell {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+.spellclass .divTableBody .divTableCell {
+  font-size: 25px;
+}
+
+.spellclass .divTableCell:hover {
+  cursor: pointer;
+}
+
+.spellclass {
+  display: table;
+}
+
+.divTableRow {
+  display: table-row;
+}
+
+.divTableCell {
+  display: table-cell;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+.numbers div {
+  position: relative;
+  margin: 0 auto;
+  top: 9em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.numbers p {
+  font: 2em Ubuntu Mono;
+}
+
+.hide {
+  display: none;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  padding: 4px;
+  border: 2px solid #666;
+  color: #000000;
+  text-align: center;
+  font: 1.5em Ubuntu Mono;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+.black_overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1001;
+}
+
+.white_content {
+  display: none;
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  width: 60%;
+  height: 60%;
+  padding: 16px;
+  border: 16px solid orange;
+  background-color: white;
+  z-index: 1002;
+  overflow: auto;
+}
+.spelllist a {
+  text-decoration: none;
+  color: #000000;
+  padding:2px 2px 2px 2px;
+}
+
+.spelllist a:hover {
+  text-decoration: none;
+  color: #ff9625;
+}
+
+.white_content p {
+  font: 1em Lora;
+}
+
+.white_content a {
+  font: 1.5em Lora;
+}
+
+div.bard0Table {
+  position: relative;
+  margin: 0 auto;
+  top: 10em;
+  font-family: Ubuntu Mono;
+  width: 99%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+.bard0Table .bard0TableCell, .bard0Table {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+.bard0Table .bard0TableBody .bard0TableCell {
+  font-size: 1.5em;
+}
+
+.bard0TableCell:hover {
+  cursor: pointer;
+}
+
+.bard0TableRow {
+  display: table-row;
+}
+
+.bard0TableCell {
+  display: table-cell;
+}
+
+.bard0TableBody {
+  display: table-row-group;
+}
+
+div.bard1Table {
+  position: relative;
+  margin: 0 auto;
+  top: 10em;
+  font-family: Ubuntu Mono;
+  width: 99%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
+
+.bard1Table .bard1TableCell, .bard1Table {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+
+.bard1Table .bard1TableBody .bard1TableCell {
+  font-size: 1.5em;
+}
+
+.bard1Table .bard1TableCell:hover {
+  cursor: pointer;
+}
+
+.bard1TableRow {
+  display: table-row;
+}
+
+.bard1TableCell {
+  display: table-cell;
+}
+
+.bard1TableBody {
+  display: table-row-group;
+}
