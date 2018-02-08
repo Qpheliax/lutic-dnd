@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Глава 11: Заклинания</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+  <link href="https://cdn.rawgit.com/noelboss/featherlight/1.7.12/release/featherlight.min.css" type="text/css" rel="stylesheet" />
   <script src="js/js.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
@@ -116,8 +118,10 @@
       <div class="bard0TableBody">
       <div class="bard0TableRow">
 
-      <div class="bard0TableCell"><a href = "javascript:void(0)" onclick = "document.getElementById('bard1').style.display='block';document.getElementById('fade').style.display='block'">Пульсирующая Волна (КВ)</a></div>
+      <div class="bard0TableCell"><a href = "#" data-featherlight="#bard1" >Пульсирующая Волна (КВ)</a></div>
+
       <div id="bard1" class="white_content">
+
         <h2>ПУЛЬСИРУЮЩАЯ ВОЛНА (КВ)</h2>
 
 <h3>Заговор, вызов</h3>
@@ -133,11 +137,28 @@
 <p><b>Длительность:</b> Мгновенная</p>
 
 <p>Вы призываете крутящуюся ленту воды, которая обертывается вокруг вас и быстро расширяется наружу. Каждое существо в пределах дистанции, кроме Вас, должно преуспеть в спасброске Ловкости или получить дробящий урон 1к4 и помеху на атаки против вас до начала своего следующего хода. Урон от заклинания увеличивается на 1к4, когда Вы достигаете 5 уровня (2к4), 11 уровня (3к4), и 17 уровня (4к4).</p>
+</div>
 
-      <a href = "javascript:void(0)" onclick = "document.getElementById('bard1').style.display='none';document.getElementById('fade').style.display='none'">Закрыть</a></div>
-  		<div id="fade" class="black_overlay"></div>
+      <div class="bard0TableCell"><a href = "#" data-featherlight="#bard2">Крепкий Росток (ПХ)</a></div>
+      <div id="bard2" class="white_content">
 
-      <div class="bard0TableCell">Крепкий Росток (ПХ)</div>
+      <h2>КРЕПКИЙ РОСТОК (ПХ)</h2>
+
+<h3>Заговор, вызов</h3>
+
+<p><b>Доступно для классов:</b> бард, волшебник, друид</p>
+
+<p><b>Время накладывания:</b> 1 действие</p>
+
+<p><b>Дистанция:</b> 60 футов</p>
+
+<p><b>Компоненты:</b> В, С, М (росток)</p>
+
+<p><b>Длительность:</b> Концентрация, вплоть до 1 минуты</p>
+
+<p>Вы призываете маленький росток с радиусом досягаемости в 5 футов, в указанной вами точке. Всякий раз, когда существо приближается к ростку, на расстояние 5 футов, вы можете использовать свою реакцию, чтобы схватить его за ноги, остановив его движение. Цель должна преуспеть в спасброске Ловкости или ее передвижение закончится до начала следующего хода.</p>
+</div>
+
       <div class="bard0TableCell">Оплетающая Лоза (ПХ)</div>
       <div class="bard0TableCell">Раскат Грома (ЭЗ)</div>
       <div class="bard0TableCell">Весёлая Песня (СЗТ)</div>
