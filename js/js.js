@@ -6,16 +6,18 @@ $(document).on('click', '.divTableCell', function() { //для подсвечи�
   $(show).removeClass("hide").siblings().addClass("hide");
 
   var x = $(this).next("div[class$='Table']");
-      $("div[class$='Table']").not(x).addClass("hide");
+  $("div[class$='Table']").not(x).addClass("hide");
+  $('.circle').css("background-color", "");
+
 
 });
 
-$(document).on('click', '.circle', function() {    //кружочки подсветка вывод
+$(document).on('click', '.circle', function() { //кружочки подсветка вывод
   $('.circle:not(this)').css("background-color", "");
   $(this).css("background-color", "#ff9625");
 
-    var show = $(this).data('show');
-    $(show).removeClass("hide").siblings().addClass("hide");
+  var show = $(this).data('show');
+  $(show).removeClass("hide").siblings().addClass("hide");
 
 });
 
