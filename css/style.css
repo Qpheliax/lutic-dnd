@@ -51,7 +51,7 @@ html, body {
 
 .overlay-content {
   position: relative;
-  top: 2em;
+  top: 3em;
   width: 100%;
   text-align: center;
   margin-top: 2em;
@@ -60,7 +60,7 @@ html, body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -69,7 +69,7 @@ html, body {
 .overlay i {
   padding: 8px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5em;
   color: #ff9625;
   display: block;
   transition: 0.3s;
@@ -88,10 +88,10 @@ html, body {
 
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 20px
+    font-size: 1.5em;
   }
   .overlay .closebtn {
-    font-size: 40px;
+    font-size: 3em;
     top: 15px;
     right: 35px;
   }
