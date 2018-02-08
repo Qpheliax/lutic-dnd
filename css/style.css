@@ -8,24 +8,32 @@ html, body {
   position:absolute;
   width:100%;
   height:auto;
-  padding-bottom: 1em;
 }
 
-#head p {
+.title p {
 	font-family: Amatic SC;
   text-align: center;
   font-size:3em;
+	margin-top:-2em;
+}
+.sign p {
 	margin:0;
-	padding-top:0.5em;
+	padding-left: 1em;
+	text-align:left;
+	font-family: Amatic SC;
+  font-size:1.5em;
+	cursor: pointer;
 }
 
 #head img {
-  margin-left: 1em;
-	margin-top: 1em;
+	position: relative;
+	margin:0;
+  padding-left: 1.5em;
+	padding-top: 1em;
 	display: block;
-float:left;
-width:6em;
-height:6em;
+width:5em;
+height:5em;
+cursor: pointer;
 }
 
 .overlay {
