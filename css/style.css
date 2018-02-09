@@ -138,8 +138,9 @@ html, body {
     left: 15%;
     width: 70%;
     height: 70%;
-    padding: 16px;
+    padding: 10px;
     text-align: left;
+    font-size: 1.5em;
     background-color: white;
     z-index: 1002;
     overflow: auto;
@@ -161,7 +162,7 @@ html, body {
     cursor: pointer;
     text-align: center;
     font-family: Lora;
-    font-size: 5em;
+    font-size: 3em;
     background: #fff;
     background: rgba(255, 255, 255, .3);
     color: #000;
