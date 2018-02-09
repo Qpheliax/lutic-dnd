@@ -140,7 +140,6 @@ html, body {
     height: 60%;
     padding: 16px;
     text-align: left;
-    border: 10px solid orange;
     background-color: white;
     z-index: 1002;
     overflow: auto;
