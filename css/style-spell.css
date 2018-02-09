@@ -70,20 +70,6 @@ div.spellclass {
   cursor: pointer;
 }
 
-.black_overlay {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: 1001;
-}
-
 .white_content {
   display: none;
 }
@@ -91,23 +77,14 @@ div.spellclass {
 .spelllist a {
   text-decoration: none;
   color: #000000;
-  padding:2px 2px 2px 2px;
+  padding: 2px 2px 2px 2px;
 }
 
 .spelllist a:hover {
   text-decoration: none;
   color: #ff9625;
 }
-
-.white_content p {
-  font: 1em Lora;
-}
-
-.white_content a {
-  font: 1.5em Lora;
-}
-
-div.bard0Table {
+div.bard0Table, div.bard1Table, div.bard2Table, div.bard3Table, div.bard4Table, div.bard5Table, div.bard6Table, div.bard7Table, div.bard8Table, div.bard9Table, div.wizard0Table, div.wizard1Table, div.wizard2Table, div.wizard3Table, div.wizard4Table, div.wizard5Table, div.wizard6Table, div.wizard7Table, div.wizard8Table, div.wizard9Table, div.druid0Table, div.druid1Table, div.druid2Table, div.druid3Table, div.druid4Table, div.druid5Table, div.druid6Table, div.druid7Table, div.druid8Table, div.druid9Table, div.cleric0Table, div.cleric1Table, div.cleric2Table, div.cleric3Table, div.cleric4Table, div.cleric5Table, div.cleric6Table, div.cleric7Table, div.cleric8Table, div.cleric9Table, div.warlock0Table, div.warlock1Table, div.warlock2Table, div.warlock3Table, div.warlock4Table, div.warlock5Table, div.warlock6Table, div.warlock7Table, div.warlock8Table, div.warlock9Table, div.paladin1Table, div.paladin2Table, div.paladin3Table, div.paladin4Table, div.paladin5Table, div.ranger1Table, div.ranger2Table, div.ranger3Table, div.ranger4Table, div.ranger5Table, div.sorcerer0Table, div.sorcerer1Table, div.sorcerer2Table, div.sorcerer3Table, div.sorcerer4Table, div.sorcerer5Table, div.sorcerer6Table, div.sorcerer7Table, div.sorcerer8Table, div.sorcerer9Table {
   position: relative;
   margin: 0 auto;
   top: 10em;
@@ -119,64 +96,27 @@ div.bard0Table {
   border-collapse: collapse;
 }
 
-.bard0Table .bard0TableCell, .bard0Table {
+.TableCell {
   border: 1px solid #AAAAAA;
-  padding: 3px 2px;
-}
-
-.bard0Table .bard0TableBody .bard0TableCell {
-  font-size: 1.5em;
-}
-
-.bard0TableCell:hover {
-  cursor: pointer;
-}
-
-.bard0TableRow {
-  display: table-row;
-}
-
-.bard0TableCell {
-  display: table-cell;
-}
-
-.bard0TableBody {
-  display: table-row-group;
-}
-
-div.bard1Table {
-  position: relative;
-  margin: 0 auto;
-  top: 10em;
-  font-family: Ubuntu Mono;
-  width: 99%;
-  height: auto;
+  padding: 1px 1px;
   text-align: center;
-  vertical-align: middle;
-  border-collapse: collapse;
+  font-size: 1em;
 }
 
-.bard1Table .bard1TableCell, .bard1Table {
-  border: 1px solid #AAAAAA;
-  padding: 3px 2px;
-}
-
-.bard1Table .bard1TableBody .bard1TableCell {
-  font-size: 1.5em;
-}
-
-.bard1Table .bard1TableCell:hover {
+.TableCell:hover {
+  text-align: center;
   cursor: pointer;
 }
 
-.bard1TableRow {
+.TableRow {
   display: table-row;
 }
 
-.bard1TableCell {
+.TableCell {
   display: table-cell;
+  vertical-align: middle;
 }
 
-.bard1TableBody {
+.TableBody {
   display: table-row-group;
 }
