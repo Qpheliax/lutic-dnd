@@ -51,7 +51,7 @@ html, body {
 
 .overlay-content {
   position: relative;
-  top: 3em;
+  top: 2em;
   width: 100%;
   text-align: center;
   margin-top: 2em;
@@ -60,7 +60,7 @@ html, body {
 .overlay a {
   padding: 8px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 24px;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -69,7 +69,7 @@ html, body {
 .overlay i {
   padding: 8px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 24px;
   color: #ff9625;
   display: block;
   transition: 0.3s;
@@ -81,18 +81,121 @@ html, body {
 
 .overlay .closebtn {
   position: absolute;
-  top: 10px;
-  right: 30px;
-  font-size: 80px;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 @media screen and (max-height: 450px) {
   .overlay a {
-    font-size: 1.5em;
+    font-size: 20px
   }
   .overlay .closebtn {
-    font-size: 3em;
+    font-size: 40px;
     top: 15px;
     right: 35px;
+  }
+}
+
+
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.7.12 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017,  Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+
+@media all {
+  html.with-featherlight {
+    overflow: hidden;
+  }
+  .featherlight {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483647;
+    text-align: center;
+    white-space: wrap;
+    background: #333;
+    background: rgba(0, 0, 0, 0);
+  }
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, .8);
+  }
+  .featherlight:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .featherlight-content {
+    position: fixed;
+    top: 15%;
+    left: 15%;
+    width: 60%;
+    height: 60%;
+    padding: 16px;
+    text-align: left;
+    border: 10px solid orange;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+  }
+  .featherlight-content h2, h3 {
+    font-family: Lora;
+  }
+  .featherlight .featherlight-inner {
+    display: block;
+  }
+  .featherlight link.featherlight-inner, .featherlight script.featherlight-inner, .featherlight style.featherlight-inner {
+    display: none;
+  }
+  .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    text-align: center;
+    font-family: Lora;
+    font-size: 5em;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    color: #000;
+    border: 0;
+    padding: 0;
+  }
+  .featherlight .featherlight-close-icon::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  .featherlight .featherlight-image {
+    width: 100%
+  }
+  .featherlight-iframe .featherlight-content {
+    border-bottom: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+  }
+  .featherlight iframe {
+    border: 0;
+  }
+  .featherlight * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+
+}
+@media print {
+  html.with-featherlight>*>: not(.featherlight) {
+    display: none;
   }
 }
