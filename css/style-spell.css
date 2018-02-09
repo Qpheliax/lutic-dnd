@@ -84,15 +84,23 @@ div.spellclass {
   text-decoration: none;
   color: #ff9625;
 }
+div.bard0Table, div.bard1Table, div.bard2Table, div.bard3Table, div.bard4Table, div.bard5Table, div.bard6Table, div.bard7Table, div.bard8Table, div.bard9Table, div.wizard0Table, div.wizard1Table, div.wizard2Table, div.wizard3Table, div.wizard4Table, div.wizard5Table, div.wizard6Table, div.wizard7Table, div.wizard8Table, div.wizard9Table, div.druid0Table, div.druid1Table, div.druid2Table, div.druid3Table, div.druid4Table, div.druid5Table, div.druid6Table, div.druid7Table, div.druid8Table, div.druid9Table, div.cleric0Table, div.cleric1Table, div.cleric2Table, div.cleric3Table, div.cleric4Table, div.cleric5Table, div.cleric6Table, div.cleric7Table, div.cleric8Table, div.cleric9Table, div.warlock0Table, div.warlock1Table, div.warlock2Table, div.warlock3Table, div.warlock4Table, div.warlock5Table, div.warlock6Table, div.warlock7Table, div.warlock8Table, div.warlock9Table, div.paladin1Table, div.paladin2Table, div.paladin3Table, div.paladin4Table, div.paladin5Table, div.ranger1Table, div.ranger2Table, div.ranger3Table, div.ranger4Table, div.ranger5Table, div.sorcerer0Table, div.sorcerer1Table, div.sorcerer2Table, div.sorcerer3Table, div.sorcerer4Table, div.sorcerer5Table, div.sorcerer6Table, div.sorcerer7Table, div.sorcerer8Table, div.sorcerer9Table {
+  position: relative;
+  margin: 0 auto;
+  top: 10em;
+  font-family: Ubuntu Mono;
+  width: 99%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  border-collapse: collapse;
+}
 
 .TableCell {
   border: 1px solid #AAAAAA;
-  padding: 3px 2px;
-}
-
-.TableBody .TableCell {
+  padding: 1px 1px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1em;
 }
 
 .TableCell:hover {
@@ -111,16 +119,4 @@ div.spellclass {
 
 .TableBody {
   display: table-row-group;
-}
-
-div.bard0Table, div.bard1Table, div.bard2Table, div.bard3Table, div.bard4Table, div.bard5Table, div.bard6Table, div.bard7Table, div.bard8Table, div.bard9Table, div.wizard0Table, div.wizard1Table, div.wizard2Table, div.wizard3Table, div.wizard4Table, div.wizard5Table, div.wizard6Table, div.wizard7Table, div.wizard8Table, div.wizard9Table, div.druid0Table, div.druid1Table, div.druid2Table, div.druid3Table, div.druid4Table, div.druid5Table, div.druid6Table, div.druid7Table, div.druid8Table, div.druid9Table, div.cleric0Table, div.cleric1Table, div.cleric2Table, div.cleric3Table, div.cleric4Table, div.cleric5Table, div.cleric6Table, div.cleric7Table, div.cleric8Table, div.cleric9Table, div.warlock0Table, div.warlock1Table, div.warlock2Table, div.warlock3Table, div.warlock4Table, div.warlock5Table, div.warlock6Table, div.warlock7Table, div.warlock8Table, div.warlock9Table, div.paladin1Table, div.paladin2Table, div.paladin3Table, div.paladin4Table, div.paladin5Table, div.ranger1Table, div.ranger2Table, div.ranger3Table, div.ranger4Table, div.ranger5Table, div.sorcerer0Table, div.sorcerer1Table, div.sorcerer2Table, div.sorcerer3Table, div.sorcerer4Table, div.sorcerer5Table, div.sorcerer6Table, div.sorcerer7Table, div.sorcerer8Table, div.sorcerer9Table {
-  position: relative;
-  margin: 0 auto;
-  top: 10em;
-  font-family: Ubuntu Mono;
-  width: 99%;
-  height: auto;
-  text-align: center;
-  vertical-align: middle;
-  border-collapse: collapse;
 }
