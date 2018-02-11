@@ -44,9 +44,7 @@ html, body {
   top: 0;
   left: 0;
   background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.9);
   overflow-x: hidden;
-  transition: 0.5s;
 }
 
 .overlay-content {
@@ -63,7 +61,6 @@ html, body {
   font-size: 24px;
   color: #818181;
   display: block;
-  transition: 0.3s;
 }
 
 .overlay i {
@@ -72,7 +69,6 @@ html, body {
   font-size: 24px;
   color: #ff9625;
   display: block;
-  transition: 0.3s;
 }
 
 .overlay a:hover, .overlay a:focus {
@@ -121,7 +117,7 @@ html, body {
     text-align: center;
     white-space: wrap;
     background: #333;
-    background: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0);
   }
   .featherlight:last-of-type {
     background: rgba(0, 0, 0, .8);
