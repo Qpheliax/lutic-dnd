@@ -120,7 +120,7 @@ html, body {
     background: rgba(0, 0, 0);
   }
   .featherlight:last-of-type {
-    background: rgba(0, 0, 0, .8);
+    background: rgba(0, 0, 0);
   }
   .featherlight:before {
     content: '';
@@ -160,7 +160,7 @@ html, body {
     font-family: Lora;
     font-size: 3em;
     background: #fff;
-    background: rgba(255, 255, 255, .3);
+    background: rgba(255, 255, 255);
     color: #000;
     border: 0;
     padding: 0;
