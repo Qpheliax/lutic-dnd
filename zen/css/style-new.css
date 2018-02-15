@@ -1,0 +1,244 @@
+html, body {
+  margin: 0;
+}
+
+div.headTable {
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  }
+.headTableCell {
+}
+
+.headTableCell p {
+  font-family: Amatic SC;
+  text-align: center;
+  font-size: 3em;
+}
+.headTableCell span p {
+      position:absolute;
+      text-align:center;
+      left: 1.1em;
+      top: 3.5em;
+      width: 100%
+  font-family: Amatic SC;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.headTableCell .huge {
+  position: relative;
+  display: block;
+  margin: 0;
+  padding-left: 1.5em;
+  width: 5em;
+  height: 5em;
+  cursor: pointer;
+}
+
+.headTable{ display: table; }
+.headTableRow { display: table-row; }
+.headTableCell { display: table-cell;}
+.headTableBody { display: table-row-group;}
+
+div.rightTable {
+  width: 100%;
+  margin: 0 auto;
+    }
+.rightTableCell img {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+.rightTableCell .big {
+  top:1em;
+  width: 4em;
+  height: 4em;
+}
+.rightTableCell .small {
+  top:1em;
+  width: 2em;
+  height: 2em;
+}
+
+.rightTable{ display:inline-block; }
+.rightTableRow { display: table-row; }
+.rightTableCell { display: table-cell;}
+.rightTableBody { display: table-row-group;}
+
+.spellname {
+    font-family: Lora;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 2em;
+  width: 100%;
+  text-align: center;
+  margin-top: 2em;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay i {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #ff9625;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #92b5ff;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5px;
+  right: 45px;
+  font-size: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+/**
+ * Featherlight - ultra slim jQuery lightbox
+ * Version 1.7.12 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017,  Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+
+@media all {
+  html.with-featherlight {
+    overflow: hidden;
+  }
+  .featherlight {
+
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2007483647;
+    text-align: center;
+    white-space: wrap;
+    background: #333;
+    background: rgba(0, 0, 0, 0);
+  }
+  .featherlight:last-of-type {
+    background: rgba(0, 0, 0, .8);
+  }
+  .featherlight:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .featherlight-content {
+    position: fixed;
+    top: 7.5%;
+    left: 7.5%;
+    width: 85%;
+    height: 85%;
+    padding: 5px;
+    text-align: left;
+    font-size: 0.8em;
+    background-color: white;
+    z-index: 2147483647;
+    overflow: auto;
+  }
+  .featherlight-content h2, h3 {
+    font-family: Lora;
+  }
+  .featherlight .featherlight-inner {
+    display: block;
+  }
+  .featherlight link.featherlight-inner, .featherlight script.featherlight-inner, .featherlight style.featherlight-inner {
+    display: none;
+
+
+  }
+  .featherlight-close-icon {
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    text-align: center;
+    font-family: Lora;
+    font-size: 3em;
+    background: #fff;
+    background: rgba(255, 255, 255, .3);
+    color: #000;
+    border: 0;
+    padding: 0;
+  }
+  .featherlight .featherlight-close-icon::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+  .featherlight .featherlight-image {
+    width: 100%
+  }
+  .featherlight-iframe .featherlight-content {
+    border-bottom: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+  }
+  .featherlight iframe {
+    border: 0;
+  }
+  .featherlight * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+
+}
+@media print {
+  html.with-featherlight>*>: not(.featherlight) {
+    display: none;
+  }
+}
