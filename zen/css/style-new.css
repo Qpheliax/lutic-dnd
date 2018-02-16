@@ -2,73 +2,84 @@ html, body {
   margin: 0;
 }
 
-div.headTable {
-  position: relative;
+#headTable {
+  padding-top:1em;
   margin: 0 auto;
-  width: 90%;
-  height: auto;
-  text-align: center;
-  vertical-align: middle;
-  border-collapse: collapse;
+      width: 90%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
   }
-.headTableCell {
-}
+  .menu {
+    order: 0;
+   flex: 0 1 auto;
+   align-self: auto;
+  }
+  .title {
+    order: 0;
+flex: 0 2 50%;
+  }
+  .search {
+    order: 0;
+   flex: 0 1 auto;
+   align-self: auto;
+  }
 
-.headTableCell p {
+.title p {
   font-family: Amatic SC;
   text-align: center;
   font-size: 3em;
 }
-.headTableCell span p {
+
+#headTable span p {
       position:absolute;
       text-align:center;
       top: 3.5em;
-      left: 1.1em;
-      width: 100%
-  font-family: Amatic SC;
+        font-family: Amatic SC;
   font-size: 1.5em;
   cursor: pointer;
 }
-.headTableCell .huge {
-  position: relative;
-  display: block;
-  margin: 0;
-  padding-left: 1.5em;
+#headTable .huge {
   width: 5em;
   height: 5em;
   cursor: pointer;
 }
 
-.headTable{ display: table; }
-.headTableRow { display: table-row; }
-.headTableCell { display: table-cell;}
-.headTableBody { display: table-row-group;}
+.rightTable {
+  height:100px;
+  padding-right:1em;
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+        }
+.rightTableCell1 {
+    order: 0;
+   flex: 0 1 100%;
+   align-self: center;
+}
+.rightTableCell1 p {
+margin-top: -5px;
+font-family: Amatic SC;
+font-size: 1.5em;
+cursor: pointer;
+}
+.rightTableCell2 {
+  order: 0;
+flex: 0 1 100%;
+align-self: center;
+}
 
-div.rightTable {
-  width: 100%;
-  margin: 0 auto;
-    }
-.rightTableCell img {
-  position: relative;
+.rightTableCell1 .big {
   cursor: pointer;
-  display: block;
-  margin: 0 auto;
+  width: 3em;
+  height: 3em;
 }
-.rightTableCell .big {
-  top:1em;
-  width: 4em;
-  height: 4em;
+.rightTableCell2 .small {
+  cursor: pointer;
+  width: 2em;
+  height: 2em;
 }
-.rightTableCell .small {
-  top:1em;
-  width: 0.7em;
-  height: 0.7em;
-}
-
-.rightTable{ display:inline-block; }
-.rightTableRow { display: table-row; }
-.rightTableCell { display: table-cell;}
-.rightTableBody { display: table-row-group;}
 
 .spellname {
     font-family: Lora;
