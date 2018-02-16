@@ -61,8 +61,8 @@ div.rightTable {
 }
 .rightTableCell .small {
   top:1em;
-  width: 2em;
-  height: 2em;
+  width: 1em;
+  height: 1em;
 }
 
 .rightTable{ display:inline-block; }
