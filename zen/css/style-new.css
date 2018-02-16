@@ -54,6 +54,7 @@ flex: 0 2 50%;
      flex-wrap: wrap;
         }
 .rightTableCell1 {
+  padding-top: 0.3em;
     order: 0;
    flex: 0 1 100%;
    align-self: center;
@@ -77,8 +78,8 @@ align-self: center;
 }
 .rightTableCell2 .small {
   cursor: pointer;
-  width: 2em;
-  height: 2em;
+  width: 1.5em;
+  height: 1.5em;
 }
 
 .spellname {
