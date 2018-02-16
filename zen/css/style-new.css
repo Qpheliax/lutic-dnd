@@ -4,6 +4,7 @@ html, body {
 
 #headTable {
   padding-top:1em;
+  padding-bottom: 1em;
   margin: 0 auto;
       width: 90%;
       display: flex;
@@ -27,15 +28,18 @@ flex: 0 2 50%;
   }
 
 .title p {
+  margin: 0;
+padding: 0;
   font-family: Amatic SC;
   text-align: center;
   font-size: 3em;
 }
 
 #headTable span p {
-      position:absolute;
-      text-align:center;
-      top: 3.5em;
+  margin: 0;
+padding: 0;
+      position:relative;
+      text-align: center;
         font-family: Amatic SC;
   font-size: 1.5em;
   cursor: pointer;
@@ -54,27 +58,30 @@ flex: 0 2 50%;
      flex-wrap: wrap;
         }
 .rightTableCell1 {
-  padding-top: 0.3em;
     order: 0;
    flex: 0 1 100%;
    align-self: center;
 }
 .rightTableCell1 p {
-margin-top: -5px;
-font-family: Amatic SC;
+  margin: 0;
+padding: 0;
+  position:relative;
+  text-align: center;
+    font-family: Amatic SC;
 font-size: 1.5em;
 cursor: pointer;
 }
 .rightTableCell2 {
-  order: 0;
+
+order: 0;
 flex: 0 1 100%;
 align-self: center;
 }
 
 .rightTableCell1 .big {
   cursor: pointer;
-  width: 3em;
-  height: 3em;
+  width: 5em;
+  height: 5em;
 }
 .rightTableCell2 .small {
   cursor: pointer;
