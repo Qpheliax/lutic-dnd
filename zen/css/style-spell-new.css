@@ -1,40 +1,49 @@
 .spellclass {
   position: relative;
   margin: 0 auto;
-  max-width:100%;
+  width:90%;
   font-family: Ubuntu Mono;
   display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-       align-content: center;
-       align-items: flex-start;
+    text-align:center;
 }
 .spellCell {
-  flex: 0 1 auto;
-    align-self: auto;
+  flex: 1 1 auto;
+    background-color:#e7e7e7;
     border: 1px solid #AAAAAA;
+    border-radius: 6px;
+    box-shadow: 0 5px #999;
     padding: 5px 5px;
     font-size: 25px;
     cursor: pointer;
 }
 
-@media screen and (orientation: portrait) {
-  .spellCell {
-    padding: 2px 1px;
-    font-size: 18px;
-  }
+.spellCell:active {
+  box-shadow: 0 2px #999;
+  transform: translateY(4px);
 }
 
-.numbers div {
+.numbers {
   position: relative;
-  margin: 0 auto;
-  top: 1em;
   width: 100%;
-  height: auto;
   text-align: center;
 }
 
+@media screen and (orientation: portrait) {
+  .spellclass {
+    width:90%;
+  }
+  .spellCell {
+    flex: 1 1 auto;
+    padding: 3px 3px;
+    font-size: 19px;
+  }
+  .TableCell2 {
+    width:15em;
+    heigh:auto;
+  }
+}
 .hide {
   display: none;
 }
@@ -58,7 +67,7 @@
 #table, #bard0Table, #bard1Table, #bard2Table, #bard3Table, #bard4Table, #bard5Table, #bard6Table, #bard7Table, #bard8Table, #bard9Table, #wizard0Table, #wizard1Table, #wizard2Table, #wizard3Table, #wizard4Table, #wizard5Table, #wizard6Table, #wizard7Table, #wizard8Table, #wizard9Table, #druid0Table, #druid1Table, #druid2Table, #druid3Table, #druid4Table, #druid5Table, #druid6Table, #druid7Table, #druid8Table, #druid9Table, #cleric0Table, #cleric1Table, #cleric2Table, #cleric3Table, #cleric4Table, #cleric5Table, #cleric6Table, #cleric7Table, #cleric8Table, #cleric9Table, #warlock0Table, #warlock1Table, #warlock2Table, #warlock3Table, #warlock4Table, #warlock5Table, #warlock6Table, #warlock7Table, #warlock8Table, #warlock9Table, #paladin1Table, #paladin2Table, #paladin3Table, #paladin4Table, #paladin5Table, #ranger1Table, #ranger2Table, #ranger3Table, #ranger4Table, #ranger5Table, #sorcerer0Table, #sorcerer1Table, #sorcerer2Table, #sorcerer3Table, #sorcerer4Table, #sorcerer5Table, #sorcerer6Table, #sorcerer7Table, #sorcerer8Table, #sorcerer9Table {
   position: relative;
   margin: 0 auto;
-  top: 2em;
+  top: 1em;
   font-family: Ubuntu Mono;
   font-size: 24px;
   width: 90%;
@@ -74,17 +83,15 @@ font-size: 18px;
   }
 }
 
-
 .TableCell2 {
+  width:20em;
+  heigh:15em;
   border: 1px solid #AAAAAA;
   padding: 1px 1px;
   text-align: center;
-  font-size: 0.9em;
-
 }
 
 .TableCell2:hover {
-  text-align: center;
   cursor: pointer;
 }
 
@@ -95,8 +102,6 @@ font-size: 18px;
 .TableCell2 {
   display: table-cell;
   vertical-align: middle;
-  width: 20em;
-  height: 2em;
 }
 
 .TableBody {
