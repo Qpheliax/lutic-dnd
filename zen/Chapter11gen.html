@@ -61,10 +61,6 @@
             <label><input type="checkbox" class="source" value="СУ">СУ - Смятение умов. Перевод выполнен Айвендил Заклинатель</label><br>
             <label><input type="checkbox" class="source" value="DS">DS - Dark Souls Compendium. Перевод выполнен Айвендил Заклинатель</label><br>
             <label><input type="checkbox" class="source" value="КТЧ">КТЧ - Книга тёмных чар (Dark Arts Player's Companion). Перевод выполнен Айвендил Заклинатель</label><br>
-
-
-
-
           </form>
         </div>
       </div>
@@ -97,27 +93,63 @@
 
   <div id="headPortrait">
 
+    <div id="navigationP" class="overlayP">
+
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNavP()">&times;</a>
+
+      <div class="overlay-contentP"></div>
+
+    </div>
+    <div id="settingsP" class="overlayP">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeSetP()">&times;</a>
+      <div class="overlay-contentP">
+        <form>
+          <i>Скрытие/показ спеллов из определенных источников.</i>
+          <i>Вот это вроде как разрешено вплоть до Лиги Приключенцев. Поправьте меня, если я не прав.</i>
+          <label><input type="checkbox" class="source" value="КИ" checked>(КИ) - метка для заклинаний из "Книги Игрока"" (Player Hand Book). Перевод выполнен Студией фэнтези «PHantom». https://vk.com/phantom_st http://phantom-studio.ru/</label><br>
+          <label><input type="checkbox" class="source" value="РКпВ" checked>(РКпВ) - метка для заклинаний из "Руководства Ксанатара по Всему"" (Xanatar's Guide to Everything). Перевод выполнен Dungeons_ru https://vk.com/dungeons_ru Dungeonsanddragons.ru</label><br>
+          <i>А тут идут спеллы из различных дополнений</i>
+          <label><input type="checkbox" class="source" value="EE">EE - метка для заклинаний из "Элементальное Зло" (Elemental Evil). Я потом найду полное название. Но по факту все спеллы из нее вошли в Ксанатар, так что переводчик выше. </label><br>
+          <label><input type="checkbox" class="source" value="ППППМ">ППППМ - метка для заклинаний из "Путеводителя Приключенца по Побережью Меча" (Sword Coast Adventurer's Guide). Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="UA">UA - метка для заклинаний из "Извлеченная Аркана" (Unearthed Arcana). Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="КВ">КВ - метка для заклинаний из "Кодекса Волн". Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="ЭСЧМ">ЭСЧМ - Эта старая чёрная магия (UA). Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="ПА">ПА - Проецированные атаки. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="УМ:БМ">УМ:БМ - Углублённая Магия: Боевая Магия (Kobold Press). Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="УМ:МХ">УМ:МХ - Углублённая Магия: Магия Хаоса (Kobold Press). Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="МК">МК - Магия Крови. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="СЗТ">СЗТ - The Compendium of Forgotten Secrets Ultimate. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="ТЗ">ТЗ (том заклинаний) - The not really Complete Tome of Spells v2. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="ПЗ">ПЗ - Потерянные заклинания. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="СУ">СУ - Смятение умов. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="DS">DS - Dark Souls Compendium. Перевод выполнен Айвендил Заклинатель</label><br>
+          <label><input type="checkbox" class="source" value="КТЧ">КТЧ - Книга тёмных чар (Dark Arts Player's Companion). Перевод выполнен Айвендил Заклинатель</label><br>
+        </form>
+      </div>
+    </div>
+
     <div class="cell">
-      <span onclick="openNav()"><img src="img/x.png"/></span>
+      <span onclick="openNavP()"><img src="img/mapP.png"/></span>
     </div>
 
     <div class="cell">
       <p>Глава 11: Заклинания </p>
     </div>
 
-    <div class="cell"><img src="img/x.png" /> <img src="img/small1.png" /></div>
+    <div id="searchformP" class="cell" onclick="openSearchP()" ><img src="img/searchP.png" /><img onclick="openSetP()" src="img/small1.png" /></div>
 
-  </div>
+    <div id="searchbookP" class="cell" onclick="openBookP()" ><img src="img/bookP.png" /><img onclick="openSetP()" src="img/small1.png" /></div>
 
+</div>
 
   <div id="inputform">
     <form onsubmit="SearchString(); return false;">
-      <br>
       <p><b>Поиск по описанию или названию заклинания</b><br></p>
-      <p><input size="50" type="search" id="neadlestring" /><input type="button" value="Найти" onclick="SearchString()" ontouch="SearchString()" /></p>
+      <p><input size="50" type="search" id="neadlestring" placeholder="Поиск..." /><input type="button" value="Найти" onclick="SearchString()" ontouch="SearchString()" /></p>
       <p><input type="radio" id="searchall" name="search-option" value="searchall" checked><label for="searchall">Поиск по всему тексту</label><input type="radio" id="searchbyname" name="search-option" value="searchbyname"><label for="searchbyname">Поиск по названию</label></p>
     </form>
   </div>
+
 
 
   <div id="main">
